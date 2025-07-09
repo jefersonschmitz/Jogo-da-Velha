@@ -1,0 +1,96 @@
+*{
+    padding:0;
+    margin:0;
+    text-align: center;
+    
+  font-family: "Lexend Giga", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  background-color: rgb(187, 200, 150);
+}
+
+.playerO{
+    margin-left: 11rem;
+    font-size: 45px;
+}
+.playerX{
+    font-size: 45px;
+    
+}
+body{
+    font-family: sans-serif;
+
+}
+h1{
+    font-size: 3rem;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+}
+.inputX{
+    border-radius:8px;
+    padding:2rem 2rem 2rem 2rem;
+    transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      background-color: #ddd;
+}
+.inputO{
+    border-radius:8px;
+    padding:2rem 2rem 2rem 2rem;
+    transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      background-color: #ddd;
+    
+}
+#start{
+    margin-top: 3rem;
+    padding: 2rem 5rem 2rem 5rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      font-weight: 800;
+      background-color: #ddd;
+}
+
+#start:hover {
+      background-color: #2ecc71;
+      transform: scale(1.1);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+      color:#ddd;
+    }
+#gameBoard{
+    background-color: #232323; /* Fundo das linhas do jogo*/
+    display:grid; /*Display em formato de grade*/
+    grid-template-columns: 6rem 6rem 6rem; /* tamanho das colunas das grades*/
+    grid-template-rows: 6rem 6rem 6rem; /* tamanho das linhas das grades*/
+    gap:.5rem; /*grossura das linhas da grade*/
+    margin-bottom: 1.5rem;
+    max-width: 19rem;
+    width: 100vw;
+    margin-left: 42vw;
+}
+#gameBoard span{
+    background-color: #ddd;
+    display: grid;
+    place-content:center; /*Para os valores do jogo ficarem centralizados em cada quadrado da grade*/
+    font-size: 5rem; /*Tamanho da fonte para o valor X ou O*/
+}
+
+#gameBoard span.win{
+    background-color:#25a340;
+}
+h3{
+   margin-top: 2rem; 
+}
+#scoreBoard{
+    display:flex;
+    gap:20px;
+    margin-left: 38vw;
+    margin-top: 1rem;
+}
+
+
+.cursor-pointer{
+    cursor:pointer;
+}
